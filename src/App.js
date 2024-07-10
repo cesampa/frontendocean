@@ -8,12 +8,18 @@ function MyButton() {
     );
 }
 
+function Saudacao({ nome }) {
+    return (
+        <h1>Olá, {nome}</h1>
+    )
+}
+let nomeCompleto = "Carlos Sampaio"
 export default function MyApp() {
     return (
         <div className='App'>
             <header className="App-header">
                 <h1>Bem-vindo ao meu aplicativo</h1>
-                <MyButton />
+                <Saudacao nome={nomeCompleto} />
             </header>
         </div>
     );
